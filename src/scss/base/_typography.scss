@@ -12,17 +12,19 @@ h3,
 
 h1,
 h2,
-.title {
+.title,
+.name {
   line-height: 1.2;
 }
 
-h1 {
+h1,
+.title {
   font-size: clamp(32px, 2rem + 1vi, 48px);
   margin-bottom: 24px;
 }
 
 h2,
-.title {
+.name {
   font-size: clamp(26px, 2rem + 1vi, 36px);
 }
 
