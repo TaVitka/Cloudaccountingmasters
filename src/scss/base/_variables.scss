@@ -1,0 +1,35 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
+
+:root {
+  --content-width: 1216px;
+  --container-offset: 16px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // font-family
+  --font-family-primary: "Lato", sans-serif;
+
+  // font-weight
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-900: 900;
+
+  // font-style
+  --fs-italic: italic;
+
+  // color
+  --color-white: #fff;
+  --color-black: #111111;
+  --color-dark: #070A0B;
+
+  --color-gray-100: #F5F5F5;
+  --color-gray-500: #888888;
+  --color-blue-200: #CCE6FF;
+  --color-blue-500: #00A8E8;
+  --color-blue-700: #0078D4;
+
+  //gradient
+  --gradient-main: linear-gradient(270deg, rgba(241, 241, 241, 0) 0%, #F1F1F1 32.4%, #F1F1F1 32.41%, #F1F1F1 100%);
+}

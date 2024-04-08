@@ -1,0 +1,78 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+h1,
+h2,
+h3,
+.title {
+  font-weight: var(--fw-700);
+  color: var(--color-dark);
+  text-transform: capitalize;
+  overflow: hidden;
+}
+
+h1,
+h2,
+.title {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(32px, 2rem + 1vi, 48px);
+  margin-bottom: 24px;
+}
+
+h2,
+.title {
+  font-size: clamp(26px, 2rem + 1vi, 36px);
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.16;
+}
+
+a,
+.accent {
+  font-weight: var(--fw-600);
+  color: var(--color-blue-500);
+}
+
+a,
+p {
+  font-size: clamp(18px, 0.5rem + 1vi, 20px);
+  line-height: 1.6;
+}
+
+.accent {
+  font-size: 16px;
+  line-height: 1;
+}
+
+p {
+  font-weight: var(--fw-400);
+  color: var(--color-dark);
+}
+
+.link {
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+
+.text,
+.copyright {
+  font-size: 16px;
+}
+
+input,
+textarea {
+  font-size: clamp(18px, 0.5rem + 1vi, 20px);;
+  line-height: 1.4;
+  font-weight: var(--fw-400);
+  color: var(--color-dark);
+
+  ::placeholder {
+    color: var(--color-gray-500);
+  }
+}
