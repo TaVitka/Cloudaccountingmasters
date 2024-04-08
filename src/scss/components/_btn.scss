@@ -1,0 +1,62 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins"as*;
+
+*[class].btn {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 14px;
+  border: 2px solid var(--color-blue-700);
+  font-weight: var(--fw-700);
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--color-blue-700);
+  text-align: center;
+  background-color: var(--color-white);
+  transition-property: background-color, color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+
+  &--reverse,
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-blue-700);
+  }
+
+  &--reverse {
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-blue-700);
+    }
+  }
+}
+
+*[class].swiper {
+  .swiper-button {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-gray-700);
+    border-radius: var(--radius-round);
+    top: 50%;
+    transform: translateY(-50%);
+
+    &::after {
+      @include contain-background();
+
+      content: '';
+      position: absolute;
+      height: 20px;
+      width: 26px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: var(--icon-swiper);
+    }
+  }
+
+  .swiper-button-prev {
+    &::after {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+  }
+}
