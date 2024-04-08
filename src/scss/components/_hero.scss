@@ -16,6 +16,10 @@
     background-repeat: no-repeat;
   }
 
+  .overlay {
+    transform: translateX(-45%);
+  }
+
   &__content {
     z-index: 1;
     margin-inline: rem(90) 0;
