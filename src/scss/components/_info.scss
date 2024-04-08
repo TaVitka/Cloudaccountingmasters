@@ -1,0 +1,29 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins"as*;
+
+.info {
+  background-color: var(--color-gray-100);
+
+  &__flex {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__content {
+    max-width: 493px;
+    width: 100%;
+    padding: rem(38);
+    background-color: var(--color-white);
+
+    > *:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: block;
+    }
+  }
+
+}
