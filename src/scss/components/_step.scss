@@ -218,4 +218,10 @@
       }
     }
   }
+
+  @include media(desktop-l, min) {
+    &__boxes {
+      margin: 0 auto;
+    }
+  }
 }
