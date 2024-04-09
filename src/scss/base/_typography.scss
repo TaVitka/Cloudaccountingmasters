@@ -27,7 +27,7 @@ h2,
   font-size: clamp(26px, 2rem + 1vi, 36px);
 
   @include media(mobile-l) {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
@@ -99,10 +99,10 @@ time {
 
 @include media(mobile-l) {
   h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .title {
-    font-size: 32px;
+    font-size: 30px;
   }
 }

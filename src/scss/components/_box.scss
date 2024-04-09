@@ -53,4 +53,33 @@
   &--simple {
     background-color: transparent;
   }
+
+  @include media(tablet) {
+    &--transforming {
+      padding-top: 0;
+    }
+
+    .title {
+      margin-bottom: 24px;
+    }
+
+    &__content {
+      flex-direction: column;
+      gap: 16px;
+
+      img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 5/3;
+      }
+    }
+
+    &__inner {
+      padding: 16px;
+
+      & > *:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
 }
