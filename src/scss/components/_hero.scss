@@ -92,6 +92,13 @@
         width: 100%;
       }
     }
+
+    &--large {
+      .hero__inner {
+        min-height: 350px;
+        padding-block: 40px;
+      }
+    }
   }
 
   @include media(desktop-l, min) {
