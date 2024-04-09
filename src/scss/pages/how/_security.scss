@@ -1,0 +1,35 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.security {
+  img {
+    margin-bottom: rem(38.4);
+  }
+
+  &__wrapper {
+    padding-inline: rem(38.4);
+  }
+
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  &__desc {
+    margin-bottom: rem(38.4);
+  }
+
+  &__content {
+    & > p,
+    ul {
+      margin-bottom: 32px;
+    }
+
+    ul {
+      padding-left: 32px;
+    }
+
+    li {
+      list-style: auto;
+    }
+  }
+}
