@@ -3,6 +3,7 @@
 
 .box {
   background-color: var(--color-gray-100);
+
   .title {
     text-align: center;
     margin-bottom: rem(51.2);
@@ -60,12 +61,6 @@
   }
 
   @include media(tablet) {
-    &--transforming,
-    &#financial,
-    &#tax {
-      padding-top: 0;
-    }
-
     .title {
       margin-bottom: 24px;
     }

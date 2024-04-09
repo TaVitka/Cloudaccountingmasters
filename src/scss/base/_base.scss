@@ -39,6 +39,10 @@ section {
   @include media(tablet) {
     padding: rem(40) 0;
   }
+
+  @include media(mobile-l) {
+    padding: 24px 0;
+  }
 }
 
 .container {
