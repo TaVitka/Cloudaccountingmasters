@@ -26,6 +26,12 @@
     }
   }
 
+  &__texts {
+    p:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+  }
+
   &__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -49,9 +55,52 @@
     }
   }
 
-  &__texts {
-    p:not(:last-of-type) {
-      margin-bottom: 40px;
+  &__boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  &__box {
+    padding: 24px;
+    background-color: var(--color-gray-100);
+
+    h3 {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    margin-bottom: 12px;
+    padding-top: 24px;
+
+    &::before {
+      @include cover-background;
+
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 100%;
+    }
+
+    &--convenience::before {
+      background-image: url("../images/icons/convenience-icon.svg");
+    }
+    &--accuracy::before {
+      background-image: url("../images/icons/accuracy-icon.svg");
+    }
+    &--security::before {
+      background-image: url("../images/icons/security-icon.svg");
+    }
+    &--time::before {
+      background-image: url("../images/icons/time-icon.svg");
     }
   }
 
