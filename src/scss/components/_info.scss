@@ -45,6 +45,13 @@
     .accent {
       font-size: clamp(32px, 2rem + 1vi, 48px);
       line-height: 1.2;
+      font-weight: var(--fw-700);
+    }
+  }
+
+  &__texts {
+    p:not(:last-of-type) {
+      margin-bottom: 40px;
     }
   }
 
@@ -57,6 +64,24 @@
   &--company {
     .info__flex {
       margin-bottom: 24px;
+    }
+  }
+
+  &--simple {
+    background-color: transparent;
+
+    .info__content {
+      padding: 24px;
+    }
+
+    .info__card {
+      padding-top: 14px;
+
+      .accent {
+        margin-bottom: 20px;
+        line-height: 1;
+        font-weight:var(--fw-900);
+      }
     }
   }
 }
