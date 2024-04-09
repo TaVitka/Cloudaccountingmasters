@@ -145,6 +145,10 @@
   }
 
   @include media(tablet) {
+    .title {
+      margin-bottom: 24px;
+    }
+
     &__boxes {
       grid-template-columns: repeat(2, 1fr);
     }

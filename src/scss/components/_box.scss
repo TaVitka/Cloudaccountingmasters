@@ -13,6 +13,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 24px;
+
+    img {
+      height: revert-layer;
+      max-width: 50%;
+    }
   }
 
   &__inner {
@@ -55,7 +60,9 @@
   }
 
   @include media(tablet) {
-    &--transforming {
+    &--transforming,
+    &#financial,
+    &#tax {
       padding-top: 0;
     }
 
@@ -68,6 +75,7 @@
       gap: 16px;
 
       img {
+        max-width: 100%;
         width: 100%;
         height: auto;
         aspect-ratio: 5/3;
@@ -79,6 +87,16 @@
 
       & > *:not(:last-child) {
         margin-bottom: 16px;
+      }
+
+      ul {
+        padding-left: 16px;
+      }
+    }
+
+    &--reverse {
+      .box__content {
+        flex-direction: column;
       }
     }
   }

@@ -85,8 +85,10 @@
     }
 
     &--home,
-    &--company {
-      p {
+    &--company,
+    &--services {
+      p,
+      h1 {
         width: 100%;
       }
     }
