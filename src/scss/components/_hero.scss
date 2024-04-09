@@ -17,7 +17,9 @@
   }
 
   .overlay {
-    transform: translateX(-45%);
+    &::before {
+      transform: translateX(-45%);
+    }
   }
 
   &__content {
