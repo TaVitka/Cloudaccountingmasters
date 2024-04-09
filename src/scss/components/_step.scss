@@ -2,6 +2,7 @@
 @use "../utils/mixins"as*;
 
 .step {
+  overflow: hidden;
 
   .title {
     margin-bottom: rem(52);
@@ -86,7 +87,7 @@
     padding-top: 76px;
 
     &::before {
-      content: "0"counter(num);
+      content: "0" counter(num);
       counter-increment: num;
       position: absolute;
       top: 10px;
@@ -95,6 +96,122 @@
       font-size: clamp(32px, 2rem + 1vi, 48px);
       font-weight: var(--fw-900);
       color: var(--color-blue-500);
+    }
+  }
+
+  @include media(tablet-wide) {
+    .title {
+      padding-right: 0;
+    }
+
+    &__boxes {
+      grid-auto-rows: auto;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    &__box {
+      padding: 0;
+
+      &--top::before,
+      &--bottom:before{
+        width: 90%;
+        height: 30px;
+      }
+
+      &--top::before {
+        top: -33px;
+      }
+
+      &--bottom:before {
+        bottom: -33px;
+      }
+
+      &--right::after {
+        height: 90%;
+        right: -33px;
+        width: 30px;
+      }
+    }
+
+    &__name {
+      padding-top: 54px;
+
+      &::before {
+        font-size: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  @include media(tablet) {
+    &__boxes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__box {
+      &--bottom:nth-child(4),
+      &--bottom:nth-child(5),
+      &--bottom:nth-child(6) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(6) {
+        &::after {
+          display: block;
+          height: 90%;
+          top: 0;
+          bottom: 0;
+          right: -33px;
+          left: unset;
+          width: 30px;
+          background-image: url("../images/icons/arrow-vertical-icon.svg");
+        }
+      }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        &::before {
+          display: none;
+        }
+      }
+
+      &--right {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include media(mobile-m) {
+    &__boxes {
+      grid-template-columns: 1fr;
+    }
+
+    &__box {
+      &::after {
+        display: block;
+        height: 90%;
+        top: 0;
+        bottom: 0;
+        right: -33px;
+        left: unset;
+        width: 30px;
+        background-image: url("../images/icons/arrow-vertical-icon.svg");
+      }
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        &::before {
+          display: none;
+        }
+      }
     }
   }
 }

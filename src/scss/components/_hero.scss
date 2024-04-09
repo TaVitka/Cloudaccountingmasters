@@ -48,4 +48,53 @@
       width: 79%;
     }
   }
+
+  @include media(tablet-wide) {
+    .overlay {
+      &::before {
+        transform: translateX(-25%);
+      }
+    }
+
+    &__content {
+      margin-inline: rem(30) 0;
+    }
+  }
+
+  @include media(tablet) {
+    &__inner {
+      min-height: 550px;
+    }
+
+    .overlay {
+      &::before {
+        transform: translateX(0%);
+        background: var(--gradient-mobile);
+      }
+    }
+  }
+
+  @include media(mobile-m) {
+    &__inner {
+      min-height: 440px;
+      padding: 0 16px
+    }
+
+    &__content {
+      margin: 0 auto;
+    }
+
+    &--home {
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  @include media(desktop-l, min) {
+    &__inner {
+      min-height: 750px;
+      background-position: top center;
+    }
+  }
 }

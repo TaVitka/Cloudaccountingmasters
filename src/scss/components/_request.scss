@@ -50,5 +50,29 @@
     padding: 13px 32px;
     line-height: 1;
     height: fit-content;
+    text-wrap: nowrap;
+  }
+
+  @include media(tablet) {
+    &__form {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__input,
+    &__textarea {
+      max-width: 100%;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+  }
+
+  @include media(mobile-m) {
+    &__img {
+      height: auto;
+      aspect-ratio: 4 / 3;
+    }
   }
 }

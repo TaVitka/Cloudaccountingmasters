@@ -25,6 +25,10 @@ h1,
 h2,
 .name {
   font-size: clamp(26px, 2rem + 1vi, 36px);
+
+  @include media(mobile-l) {
+    font-size: 30px;
+  }
 }
 
 h3 {
@@ -91,4 +95,14 @@ time {
   line-height: 1.6;
   font-weight: var(--fw-400);
   opacity: 50%;
+}
+
+@include media(mobile-l) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
 }
