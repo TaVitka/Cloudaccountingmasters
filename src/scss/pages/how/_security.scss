@@ -32,4 +32,35 @@
       list-style: auto;
     }
   }
+
+  @include media(tablet) {
+    padding-block: 0;
+
+    img,
+    &__desc {
+      margin-bottom: 24px;
+    }
+
+    &__wrapper {
+      padding-inline: 0;
+    }
+
+    &__content {
+      & > p,
+      ul {
+        margin-bottom: 24px;
+      }
+
+      ul {
+        padding-left: 16px;
+      }
+    }
+  }
+
+  @include media(mobile-m) {
+    img {
+      height: auto;
+      aspect-ratio: 5 / 3;
+    }
+  }
 }
