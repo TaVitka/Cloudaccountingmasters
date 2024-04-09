@@ -35,7 +35,6 @@ h3 {
 a,
 .accent {
   font-weight: var(--fw-600);
-  color: var(--color-blue-500);
 }
 
 a,
@@ -47,6 +46,7 @@ p {
   display: block;
   font-size: 16px;
   line-height: 1;
+  color: var(--color-blue-500);
 }
 
 p {
@@ -54,10 +54,11 @@ p {
   line-height: 1.6;
 }
 
+a,
 .link {
   font-size: 18px;
   line-height: 1.2;
-  background-color: var(--color-dark);
+  color: var(--color-dark);
 }
 
 .text,

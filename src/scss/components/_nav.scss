@@ -15,6 +15,10 @@
     max-width: 312px;
     width: 100%;
     margin-right: 16px;
+
+    @include media(mobile-m) {
+      max-width: 220px;
+    }
   }
 
   &__inner {
