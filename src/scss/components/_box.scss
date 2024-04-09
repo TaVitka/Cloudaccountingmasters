@@ -30,6 +30,10 @@
     li {
       list-style: disc;
     }
+
+    .title {
+      text-align: left;
+    }
   }
 
   &--accent {
@@ -44,5 +48,9 @@
     .box__content {
       flex-direction: row-reverse;
     }
+  }
+
+  &--simple {
+    background-color: transparent;
   }
 }
