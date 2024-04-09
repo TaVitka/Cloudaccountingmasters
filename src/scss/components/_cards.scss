@@ -4,6 +4,9 @@
 .cards {
   h2,
   &__desc {
+    max-width: 802px;
+    width: 100%;
+    margin-inline: auto;
     text-align: center;
   }
 
