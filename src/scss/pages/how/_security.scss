@@ -2,20 +2,17 @@
 @use "../../utils/mixins/"as*;
 
 .security {
-  img {
-    margin-bottom: rem(38.4);
+  img,
+  &__desc {
+    margin-bottom: rem(38);
   }
 
   &__wrapper {
-    padding-inline: rem(38.4);
+    padding-inline: rem(38);
   }
 
   h2 {
     margin-bottom: 24px;
-  }
-
-  &__desc {
-    margin-bottom: rem(38.4);
   }
 
   &__content {

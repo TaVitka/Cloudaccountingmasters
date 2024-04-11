@@ -3,11 +3,11 @@
 
 .policy {
   & > *:not(last-child) {
-    margin-bottom: rem(38.4);
+    margin-bottom: rem(38);
   }
 
   h1 {
-    margin-bottom: rem(51.2);
+    margin-bottom: rem(51);
     font-size: clamp(26px, 2rem + 1vi, 36px);
     text-transform: capitalize;
     text-align: center;

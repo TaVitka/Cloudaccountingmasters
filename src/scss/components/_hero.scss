@@ -23,8 +23,8 @@
   }
 
   &__content {
-    z-index: 1;
-    margin-inline: rem(90) 0;
+    position: relative;
+    z-index: 2;
     max-width: 493px;
     width: 100%;
   }
@@ -54,10 +54,6 @@
       &::before {
         transform: translateX(-25%);
       }
-    }
-
-    &__content {
-      margin-inline: rem(30) 0;
     }
   }
 

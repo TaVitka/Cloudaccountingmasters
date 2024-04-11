@@ -6,7 +6,7 @@
 
   .title {
     text-align: center;
-    margin-bottom: rem(51.2);
+    margin-bottom: rem(51);
   }
 
   &__content {
@@ -22,7 +22,7 @@
   }
 
   &__inner {
-    padding: rem(38.4);
+    padding: rem(38);
     background-color: var(--color-white);
 
     & > *:not(:last-child) {

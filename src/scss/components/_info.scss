@@ -120,7 +120,7 @@
 
   &__details {
     & > *:not(:last-child) {
-      margin-bottom: rem(51.2);
+      margin-bottom: rem(51);
     }
 
     .name {
@@ -176,7 +176,7 @@
 
   &--customization {
     .info__flex {
-      margin-bottom: rem(51.2);
+      margin-bottom: rem(51);
     }
   }
 
